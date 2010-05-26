@@ -1,0 +1,12 @@
+-title "Add a game to schedule"
+
+.games_box
+  .fancy.title
+    = yield :title
+  = error_messages_for :game
+
+  - form_for(:game, :url => objects_url) do |f|
+    = render :partial => "form", :locals => {:f => f}
+    %p= submit_tag "Create"
+
+  = link_to 'Back', objects_path

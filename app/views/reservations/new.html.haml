@@ -1,0 +1,16 @@
+-title "Creating reservation"
+.reservations_box
+  - if current_user
+    .edit
+      -link_to reservations_url do
+        Reservations List
+      -link_to logout_url do
+        Logout
+
+  .fancy.title
+    Create your reservation
+  = error_messages_for :reservation
+
+  - form_for(:reservation, :url => objects_url) do |f|
+    = render :partial => "form", :locals => {:f => f}
+    %p= submit_tag "Create"

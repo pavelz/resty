@@ -1,0 +1,33 @@
+-title "Viewing reservation"
+.reservations_box
+  - if current_user
+    .fancy.title
+      Reservation #
+      = current_object.id
+  -else
+    .fancy.title
+      Your reservation
+  %div.reservation_show[current_object]
+    %p.name
+      %strong For
+      = h current_object.name
+    %p.email
+      %strong Email
+      = h current_object.email
+    %p.phone
+      %strong Contact Phone
+      = h current_object.phone
+    %p.when
+      %strong Date
+      = h current_object.when.strftime("%d %B, %Y @ %H:%M")
+    %p.for_seats
+      %strong For seats
+      = h current_object.for_seats
+    %p.token
+      %strong Token
+      = h current_object.token
+  -if current_user
+    .edit
+      = link_to 'Edit', edit_object_path
+      |
+      = link_to 'Cancel Reservation', object_path, :confirm => 'Really destroy reservation?', :method => :delete

@@ -1,0 +1,67 @@
+.food_menu
+  .head
+    Terminal
+  .note
+    %ul.menu
+      Soups
+      %li
+        Green Coloured Soup       3.95
+      %li
+        Soup of the day        3.50
+
+    %ul.menu
+      Salads
+      %li
+        Terminal Tropical Salad      6.50
+      %li
+        Mixed Green Salad     3.95
+      %li
+        Caesar Salad     4.25
+      %li
+        ADD Shrimp/Chicken      3.50
+
+    %ul.menu
+      Appetizers/Tapas
+      %li
+        Terminal Shrimp    8.95 
+      %li
+        Mussels on a white wine and garlic sauce   9.95
+      %li
+        Chicken Drumettes   7.95  
+      %li
+        Grilled Portuguese Sausage     9.95
+      %li
+        Russian Potato Salad “Stolichniy”     7.95
+
+    %ul.menu
+      Mains
+      %li
+        (Served with vegetables and a choice of Mashed Potato with Mushroom sauce, Yellow Carrot Rise or French Fries)
+      %li
+        Terminal Sandwich (Francesinha especial)     13.95
+      %li
+        10oz Strip Loin Steak     17.95
+      %li
+        Grilled Salmon     13.95
+      %li
+        Atlantic Sea Bass     17.95
+      %li
+        Seafood Pasta     11.95
+      %li
+        Meatball Pasta in Tomato Sauce     11.95
+      %li
+        Sandwich
+      %li
+        Mini Burgers     5.95
+      %li
+        Chicken Panini     6.50
+      %li
+        Veggie Wrap     5.50
+    %ul.menu
+      Dessert
+      %li
+        Fruit Plate with Mango Sorbet   5.95
+      %li
+        Cream Brule     6.95
+- content_for :head do
+  = javascript_include_tag 'food_menu'

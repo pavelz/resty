@@ -1,0 +1,21 @@
+-link_to event do
+  %div[event]><
+    .title.rounded_sm><
+      = h event.title
+    .description
+      = event.description
+    .scheduled_for
+      -if Time.now > event.scheduled_for
+        %strong Has happened
+        = distance_of_time_in_words_to_now event.scheduled_for
+        ago
+      -else
+        %strong Will commence in
+        = distance_of_time_in_words_to_now event.scheduled_for
+      on
+      = event.scheduled_for.strftime('%d %B, %Y')
+    - if current_user
+      .edit><
+        = link_to 'Show', object_path(event)
+        = link_to 'Update', edit_object_path(event)
+        = link_to 'Cancel', object_path(event), :confirm => 'Really destroy event?', :method => :delete

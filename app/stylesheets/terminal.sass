@@ -1,0 +1,390 @@
+@import blueprint
+@import compass/utilities/lists
+
+=ilb
+  display: inline-block
+  *display: inline
+  *zoom: 1
+=addthis_tb
+  .addthis_toolbox .custom_images a 
+    +ilb
+    width: 32px
+    height: 32px
+    margin: 0
+    padding: 0
+  .addthis_toolbox .custom_images a img
+    opacity: 1.0
+  .addthis_toolbox .custom_images a:hover img 
+    opacity: 0.75
+  .addthis_toolbox
+    display: block
+    float: right
+
+.fancy
+  font-family: Champagne & Limousines
+#body
+  background: gray url('/images/terminal_back.png') repeat
+  display: block
+  position: relative
+  background-color: #000
+  color: #fff
+  font-family: sans-serif
+  font-size: 14px
+  a, a:link, a:visited, a:active
+    display: block
+    color: white
+    text-decoration: none
+    border: 0px solid white
+
+  .title_logo
+    background: transparent url('/images/logo_back.png') repeat
+    width: 100%
+    img
+      display: block
+      width: 950px
+      margin: 0px auto
+
+  .edit
+    a
+      border: 1px solid gray
+      padding: 10px
+      +ilb
+  .errorExplanation
+    color: black
+    background-color: #bbaaaa
+    border: 1px solid white
+    padding: 10px
+    margin-bottom: 20px
+    ul
+      li
+        font-family: sans-serif
+        color: yellow
+        font-weight: bold
+
+  .container
+    .mooeditable-container
+      background-color: white
+    +column(24)
+    +last
+    float: none
+    margin: 0px auto
+    display: block
+    position: relative
+    .contact_bar
+      +column(24)
+      +last
+      background-color: transparent
+      font-weight: bold
+      font-size: 20px
+      line-height: 20px
+      .item
+        .text
+          padding: 10px 0px
+          font-family: Space Age
+          margin: 0px auto
+          text-align: center
+        +column(6)
+      .item:hover
+        background-color: black
+      .last
+        +last
+    .main_area
+      list-style: none
+      border: 1px solid #222
+      background: transparent url('/images/dark.png') repeat
+      +column(24)
+      position: relative
+        
+      .today_box,.about_box
+        margin-top: 30px
+        min-height: 600px
+        padding: 20px
+        margin: 10px
+        border: 1px solid #333
+        background: transparent url("/images/dark.png")
+        font-family: sans-serif
+        .head
+          font-size: 30px
+          width: 200px
+          margin: 0px auto
+          margin-bottom: 20px
+        .game_title
+        .photo
+          height: 150px
+          width: 250px
+          border: 1px solid #222
+          float: right
+          margin-left: 20px
+          margin-bottom: 20px
+      .about_box
+        line-height: 20px
+
+      .menu_box
+        +column(6)
+        height: 1000px
+        .games_box
+
+          margin: 5px
+          padding: 15px
+          border: 1px solid #222
+          font-size: 16px
+          font-weight: bold
+          line-height: 22px
+          .big
+            font-size: 18px
+            +ilb
+            color: red
+          .fifa_color
+            color: #D06628
+            +ilb
+            
+          li
+            margin: 0px 3px
+            border-left: 2px solid #444
+            padding-left: 10px
+          background: transparent url('/images/dark.png')
+        .countdown_box
+          margin-left: -15px
+          padding: 20px 10px
+          padding-right: 60px
+          width: 223px
+          height: 160px
+          border: 1px solid #D06628
+          overflow: hidden
+          background: #A11D08
+          .title
+            color: white
+            margin-left: 10px
+            display: block
+            position: relative
+            font-size: 30px
+            font-family: Space Age
+            .subtitle
+              padding: 20px
+              color: #D06628
+              width: 150px
+              font-size: 14px
+              margin: 0px auto
+          #countdown
+            font-size: 30px
+            line-height: 32px
+            width: 178px
+            margin: 0px auto
+            font-weight: bold
+            text-shadow: gray 4px
+        ul.menu
+          font-size: 25px
+          line-height: 20px
+          padding: 20px
+          li
+            display: block
+            font-family: Champagne & Limousines
+            padding: 5px 20px
+          li:hover
+            display: block
+            background: transparent url('/images/logo_back.png') repeat
+
+            
+      .content
+        +column(16)
+        +last
+        .games_box,.login_view
+          padding: 10px
+          margin: 10px
+          border: 1px dotted #222
+          background: transparent url("/images/dark.png")
+          .add_reservation
+            color: gray
+            font-weight: bold
+          .share
+            +addthis_tb
+            padding: 10px
+            height: 32px
+          .title
+            font-size: 35px
+            padding: 10px 0px
+            background: transparent url('/images/dark.png')
+            border-top: 1px solid gray
+            border-bottom: 1px solid gray
+            margin-bottom: 12px
+          .games_box_title
+            font-size: 35px
+            display: block
+            width: 250px
+            margin: 0px auto
+            padding-bottom: 20px 
+          .game_description
+            +ilb
+            width: 380px
+          .game
+            padding: 5px
+          .name
+          .image_url
+            +ilb
+            vertical-align: top
+          .game_logo
+            +ilb
+            width: 160px
+            height: 110px
+            padding: 5px
+            background: transparent url('/images/dark.png')
+            overflow: hidden
+            img
+              display: block
+              margin: 0px auto
+
+          .game_title
+            padding-bottom: 10px
+            font-size: 24px
+            line-height: 26px
+          .featured_game
+            background: #ff0000
+
+        .login_view
+          margin-top: 50px
+          padding-left: 20px
+          height: 400px
+          input[type=password], input[type=text]
+            padding: 5px
+            margin-left: 2px
+          .login_title
+            font-size: 35px
+            padding: 15px 0px
+            width: 80px
+            margin: 0px auto
+        .reservations_box
+          .head
+            font-weight: bold
+          .name, .email,.phone,.when,.for_seats
+            padding: 5px 2px
+            width: 110px
+            +ilb
+          .title
+            font-size: 30px
+            width: 300px
+            display: block
+            margin: 15px auto
+            padding: 10px 0px
+            background: transparent url('/images/dark.png')
+            border-top: 1px solid gray
+            border-bottom: 1px solid gray
+            margin-bottom: 12px
+            text-align: center
+
+          .reservation_show
+            p
+              strong
+                font-weight: bold
+                display: block
+              display: block
+          margin-top: 20px
+          height: 400px
+          padding: 15px
+          border: 1px dotted #222
+          background: transparent url('/images/dark.png')
+        .gallery_box
+          .photos_title
+            font-size: 34px
+            display: block
+            margin: 0px auto
+            margin-top: 10px
+            width: 200px
+          margin-top: 20px
+          background-color: black
+          border: 1px dotted #222
+          +column(16)
+          +last
+          .gallery
+            display: block
+            padding: 20px
+            a
+              display: inline-block
+              padding: 10px
+              margin: 5px
+              border: 1px solid gray
+              vertical-align: middle
+        .google_map
+          display: block
+          padding-top: 50px
+          width: 425px
+          margin: 0px auto
+        .address
+          font-family: Champagne & Limousines
+          .head
+            padding: 10px 0px
+            font-size: 24px
+          .line
+            padding: 5px 0px
+            font-size: 20px
+        label
+          display: block
+        form
+          +blueprint-form
+        .events
+          margin-top: 20px
+        .event
+          background: transparent url("/images/dark.png")
+          border: 1px solid gray
+          margin-bottom: 20px
+          padding: 20px
+          padding-top: 20px
+          .title
+            display: block
+            padding: 5px
+            font-size: 24px
+            line-height: 26px
+            font-weight: 200
+            background-color: #75003b
+
+
+          .description
+            margin-top: 10px
+            font-size: 16px
+            line-height: 20px
+            min-height: 100px
+          .scheduled_for
+
+            display: block
+            position: relative
+            height: 28px
+            +addthis_tb
+
+        .food_menu
+          margin-top: 20px
+          .drinks_list
+            width: 250px
+            vertical-align: top
+            ul.ingredients
+              padding: 0px
+              padding-left: 30px
+              margin: 0px
+              color: yellow
+              font-family: sans-serif
+              font-size: 12px
+              line-height: 13px
+              li
+                padding: 1px
+                margin: 1px
+            +ilb
+          .head
+            font-size: 30px
+            line-height: 26px
+            text-align: center
+            font-family: Champagne & Limousines
+          .note
+            font-size: 12px
+            font-weight: bold
+            line-height: 16px
+            padding: 5px 0px
+            text-align: center
+          ul
+            background-color: #272727
+            margin: 20px 20px 
+            padding: 10px
+            font-size: 20px
+            line-height: 18px
+            li
+              padding: 10px
+              margin: 0px 10px
+
+

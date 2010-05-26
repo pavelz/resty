@@ -1,0 +1,12 @@
+one:
+  id: 1
+  name: MyString
+  description: MyText
+  image_url: MyString
+  featured: false
+two:
+  id: 2
+  name: MyString
+  description: MyText
+  image_url: MyString
+  featured: false

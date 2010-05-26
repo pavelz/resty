@@ -1,0 +1,14 @@
+one:
+  id: 1
+  email: MyString
+  phone: MyString
+  when: 2010-05-03 18:07:44
+  for_seats: 1
+  token: MyString
+two:
+  id: 2
+  email: MyString
+  phone: MyString
+  when: 2010-05-03 18:07:44
+  for_seats: 1
+  token: MyString

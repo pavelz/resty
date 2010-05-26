@@ -1,0 +1,20 @@
+%p
+  %label{:for => "event_title"} Title:
+  = f.text_field :title
+%p
+  %label{:for => "event_description"} Description:
+  = f.text_area :description,:style=>"width: 560px; height: 400px"
+%p
+  %label{:for => "event_scheduled_for"} Scheduled for:
+  = f.datetime_select :scheduled_for
+
+= content_for :head do
+  <link rel="stylesheet" type="text/css" href="/mooe/Assets/MooEditable/MooEditable.css">
+  <script type="text/javascript" src="/mooe/Source/MooEditable/MooEditable.js"></script>
+
+  <script type="text/javascript">
+  window.addEvent('domready', function(){
+  $('event_description').mooEditable();
+  });
+  </script>
+

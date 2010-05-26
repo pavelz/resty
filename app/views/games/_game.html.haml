@@ -1,0 +1,37 @@
+- if game_counter % 2 != 0
+  - style = 'background: #222'
+-link_to game do
+  %div[game]{ :style => style }
+    -if game_counter % 2 == 0
+      .image_url
+        - unless game.image_url.nil? or game.image_url.blank?
+          = image_tag game.image_url
+        - else
+          .game_logo
+            = image_tag "/images/wc2010logo.png"
+    .game_description
+      .game_title
+        = h game.name
+      .description
+        = h game.description
+      - if current_user 
+        .featured
+          %strong Featured Game
+          = h game.featured
+      .date
+        = h game.scheduled_for.strftime("%d %B, %Y")
+    -if game_counter % 2 != 0
+      .image_url
+        - unless game.image_url.nil? or game.image_url.blank?
+          = image_tag game.image_url
+        - else
+          .game_logo
+            = image_tag "/images/wc2010logo.png"
+
+    - if current_user
+      .edit><
+        = link_to 'Show', object_path(game)
+        |
+        = link_to 'Edit', edit_object_path(game)
+        |
+        = link_to 'Delete', object_path(game), :confirm => 'Really destroy game?', :method => :delete

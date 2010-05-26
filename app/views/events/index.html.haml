@@ -1,0 +1,12 @@
+- title "Featured Events"
+
+-if current_user
+  .events
+    .edit
+      = link_to "New Event", new_event_url
+      = link_to "Log Out", logout_url,:style=>"background-color: #ffdddd; color: black"
+
+-link_to
+.events
+  = render :partial => 'event', :collection => @events
+

@@ -1,0 +1,19 @@
+- link_to reservation do
+  %div[reservation]
+    %p.name
+      = h reservation.name
+    %p.email
+      = h reservation.email
+    %p.phone
+      = h reservation.phone
+    %p.when
+      = h reservation.when.strftime('%d/%b@%H:%M')
+    %p.for_seats
+      = h reservation.for_seats
+/
+  - if current_user
+    = link_to 'Show', object_path(reservation)
+    |
+    = link_to 'Edit', edit_object_path(reservation)
+    |
+    = link_to 'Destroy', object_path(reservation), :confirm => 'Really destroy reservation?', :method => :delete

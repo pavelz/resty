@@ -1,0 +1,12 @@
+-title  "Editing game"
+.games_box
+  = error_messages_for :game
+
+  - form_for(:game, :url => object_url, :html => { :method => :put }) do |f|
+    = render :partial => "form", :locals => {:f => f}
+    %p= submit_tag "Update"
+  - if current_user
+    .edit
+      = link_to 'Show', object_path
+      |
+      = link_to 'Back', objects_path

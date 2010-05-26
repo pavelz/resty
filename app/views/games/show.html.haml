@@ -1,0 +1,43 @@
+-title current_object.name + " @ theterminal1474.ca on " + current_object.scheduled_for.strftime("%d/%b/%y")
+
+.games_box{:style=>"background-color: "+(current_object.featured ? 'red':'transparent').to_s }
+  .fancy.title
+    =current_object.name + " on " +current_object.scheduled_for.strftime("%d/%b/%y")
+
+  %div[current_object]
+    - game = current_object
+    .image_url
+      - unless game.image_url.nil? or game.image_url.blank?
+        = image_tag game.image_url
+      - else
+        .game_logo
+          = image_tag "/images/wc2010logo.png"
+    .game_description
+      .game_title
+        = h current_object.name
+      .description
+        = h current_object.description
+      .date
+        = h game.scheduled_for.strftime("%d %B, %Y")
+    .add_reservation
+      = link_to "Make a reservation", new_reservation_path('reservation[when]' => game.scheduled_for )
+    .share
+      <div class="addthis_toolbox">   
+      <div class="custom_images">
+      <a class="addthis_button_facebook"><img src="/images/facebook_32.png" width="32" height="32" alt="Share to Facebook" /></a>
+      <a class="addthis_button_twitter"><img src="/images/twitter_32.png" width="32" height="32" alt="Share to Twitter" /></a>
+      <a class="addthis_button_stumbleupon"><img src="/images/stumbleupon_32.png" width="32" height="32" alt="Stumble It" /></a>
+      <a class="addthis_button_email"><img src="/images/email_32.png" width="32" height="32" alt="Email This" /></a>
+      <a class="addthis_button_more"><img src="/images/addthis_32.png" width="32" height="32" alt="More..." /></a>
+      </div>
+      </div>
+
+    -if current_user
+      .edit
+        = link_to 'Edit', edit_object_path
+        |
+        = link_to 'Destroy', object_path, :confirm => 'Really destroy game?', :method => :delete
+        |
+        = link_to 'Back', objects_path
+
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=xa-4bdf03c85d2cd582"></script>

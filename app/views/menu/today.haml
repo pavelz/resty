@@ -1,0 +1,29 @@
+.today_box
+  .head
+    Today's Events
+  .game_title
+    Telvised Games
+  .games_box
+    -unless @games.empty?
+      = render :partial => "games/game", :collection => @games
+      /
+        - @games.each do |game|
+          -link_to game do
+            = game.name
+            @
+            = game.scheduled_for.strftime('%H:%M')
+    - else
+      There are no soccer games schuduled today.
+  .game_title
+    Other Events
+  .games_box
+    -unless @events.empty?
+      = render :partial => "events/event", :collection => @events
+      /
+        - @events.each do |event|
+          -link_to event do
+            = event.title
+            @
+            = event.scheduled_for.strftime('%H:%M')
+    -else
+      There are no events for today

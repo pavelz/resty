@@ -1,0 +1,13 @@
+-title "Listing games"
+
+- if current_user
+  .edit
+    = link_to 'New game', new_object_path 
+    = link_to 'Logout', logout_path
+.games_box
+  .games_box_title.fancy><
+    Upcoming Games
+  -if @featured_game
+    .featured_game
+      = render :partial => 'game', :collection => [@featured_game]
+  = render :partial => 'game', :collection => current_objects

@@ -1,0 +1,15 @@
+%p
+  %label{:for => "game_name"} Name:
+  = f.text_field :name
+%p
+  %label{:for => "game_featured"} Scheduled for:
+  = f.datetime_select :scheduled_for
+%p
+  %label{:for => "game_description"} Description:
+  = f.text_area :description
+%p
+  %label{:for => "game_image_url"} Image url:
+  = f.text_field :image_url
+%p
+  %label{:for => "game_featured"} Featured:
+  = f.check_box :featured

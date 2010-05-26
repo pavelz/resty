@@ -1,0 +1,10 @@
+one:
+  id: 1
+  name: MyString
+  email: MyString
+  password: MyString
+two:
+  id: 2
+  name: MyString
+  email: MyString
+  password: MyString

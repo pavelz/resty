@@ -1,0 +1,18 @@
+-title "Listing reservations"
+
+.reservations_box
+  .explain
+    Reservations for today and onwards. First one is earliest one.
+  .head
+    %p.name
+      %strong Name
+    %p.email
+      %strong Email
+    %p.phone
+      %strong Phone
+    %p.when
+      %strong When
+    %p.for_seats
+      %strong For seats
+
+  = render :partial => 'reservation', :collection => current_objects

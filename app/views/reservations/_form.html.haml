@@ -1,0 +1,15 @@
+%p
+  %label{:for => "reservation_email"} Your Name:
+  = f.text_field :name
+%p
+  %label{:for => "reservation_email"} Email:
+  = f.text_field :email
+%p
+  %label{:for => "reservation_phone"} Phone:
+  = f.text_field :phone
+%p
+  %label{:for => "reservation_when"} When:
+  = f.datetime_select :when
+%p
+  %label{:for => "reservation_for_seats"} For seats:
+  = f.text_field :for_seats
