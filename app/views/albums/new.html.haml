@@ -1,0 +1,10 @@
+-title 'Creating album'
+
+.album_box
+  .head
+    =yield :title
+  = error_messages_for :album
+
+  - form_for(:album, :url => objects_url) do |f|
+    = render :partial => "form", :locals => {:f => f}
+    %p= submit_tag "Create"

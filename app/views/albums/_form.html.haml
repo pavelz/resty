@@ -1,0 +1,10 @@
+%p
+  %label{:for => "album_name"} Name:
+  = f.text_field :name
+%p
+  %label{:for => "album_event_id"} Event:
+  = f.select :event_id , Event.find(:all).map { |e| [e.title, e.id] }
+%p
+  %label{:for => "album_flickr_tag"} Flickr Tag:
+  = f.text_field :flickr_tag
+

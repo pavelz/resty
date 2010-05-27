@@ -9,7 +9,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100526062247) do
+ActiveRecord::Schema.define(:version => 20100526202932) do
+
+  create_table "albums", :force => true do |t|
+    t.string   "name"
+    t.datetime "taken_when"
+    t.integer  "event_id"
+    t.string   "flickr_tag"
+  end
 
   create_table "events", :force => true do |t|
     t.string   "title"

@@ -1,0 +1,10 @@
+one:
+  id: 1
+  name: MyString
+  taken_when: 2010-05-26 15:50:18
+  event_id: 1
+two:
+  id: 2
+  name: MyString
+  taken_when: 2010-05-26 15:50:18
+  event_id: 1

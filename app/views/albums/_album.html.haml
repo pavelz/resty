@@ -1,0 +1,17 @@
+%div[album]
+  %p.name
+    %strong Name
+    = h album.name
+  %p.taken_when
+    %strong Taken when
+    = h album.taken_when
+  %p.event_id
+    %strong Event
+    = h album.event_id
+  -if current_user
+    .edit
+      = link_to 'Show', object_path(album)
+      |
+      = link_to 'Edit', edit_object_path(album)
+      |
+      = link_to 'Destroy', object_path(album), :confirm => 'Really destroy album?', :method => :delete

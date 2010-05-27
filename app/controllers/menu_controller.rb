@@ -13,6 +13,13 @@ class MenuController < ApplicationController
     render 'today'
   end
 
+  def pictures
+    respond_to do |want|
+      want.json do
+      end
+    end
+  end
+
   def about_us
     render 'about'
   end
