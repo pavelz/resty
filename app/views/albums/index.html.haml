@@ -1,0 +1,12 @@
+-title "Listing albums"
+
+.album_box
+  .head
+    Photo Albums
+  = render :partial => 'album', :collection => current_objects
+  
+  -if current_user
+    .edit
+      = link_to 'New album', new_object_path 
+      |
+      = link_to 'Logout', logout_path

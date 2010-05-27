@@ -25,11 +25,32 @@ var load_pictures = function(user, tag, el_id)
                 }).send()
 }
 
+var load_albums = function(){
+    var gallery_box = $('gallery_box');
+    var r = new Request.JSON({
+                  'url':'/albums',
+                  'onSuccess': function(albums){
+                    albums.each(function(album){
+                      a = album.album
+                      album_title = new Element('div',{'class':'fancy photos_title','text':a.name});
+                      album_title.inject(gallery_box);
+                      album_box = new Element('div',
+                                              {
+                                                'class':'gallery'
+                                                }
+                                            );
+                      album_box.inject(gallery_box);
+                      load_pictures("49714190@N05", a.flickr_tag, a.flickr_tag);
+                    })
+                  }
+    }).get();
+
+    Cufon.replace('.fancy',{'fontFamily':'Champagne & Limousines'} );
+    console.log("WHAT");
+}
 
 window.addEvent ( 'domready', function() {
-  load_pictures("49714190@N05", "team", "team_photos")
-  load_pictures("49714190@N05", "event", "event_photos")
-  load_pictures("49714190@N05", "drink", "drink_photos")
+    load_albums()
 })
 
 

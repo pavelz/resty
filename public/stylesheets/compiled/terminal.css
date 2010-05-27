@@ -59,7 +59,7 @@
     /* line 65, ../../../app/stylesheets/terminal.sass */
     #body .container .mooeditable-container {
       background-color: white; }
-    /* line 101, ../../../../../../../var/lib/gems/1.8/gems/compass-0.8.17/frameworks/blueprint/stylesheets/blueprint/modules/_grid.sass */
+    /* line 101, ../../../../../../var/lib/gems/1.8/gems/compass-0.8.17/frameworks/blueprint/stylesheets/blueprint/modules/_grid.sass */
     * html #body .container {
       overflow-x: hidden; }
     /* line 73, ../../../app/stylesheets/terminal.sass */
@@ -73,7 +73,7 @@
       font-weight: bold;
       font-size: 20px;
       line-height: 20px; }
-      /* line 101, ../../../../../../../var/lib/gems/1.8/gems/compass-0.8.17/frameworks/blueprint/stylesheets/blueprint/modules/_grid.sass */
+      /* line 101, ../../../../../../var/lib/gems/1.8/gems/compass-0.8.17/frameworks/blueprint/stylesheets/blueprint/modules/_grid.sass */
       * html #body .container .contact_bar {
         overflow-x: hidden; }
       /* line 80, ../../../app/stylesheets/terminal.sass */
@@ -88,7 +88,7 @@
           font-family: Space Age;
           margin: 0px auto;
           text-align: center; }
-        /* line 101, ../../../../../../../var/lib/gems/1.8/gems/compass-0.8.17/frameworks/blueprint/stylesheets/blueprint/modules/_grid.sass */
+        /* line 101, ../../../../../../var/lib/gems/1.8/gems/compass-0.8.17/frameworks/blueprint/stylesheets/blueprint/modules/_grid.sass */
         * html #body .container .contact_bar .item {
           overflow-x: hidden; }
       /* line 87, ../../../app/stylesheets/terminal.sass */
@@ -107,11 +107,11 @@
       margin-right: 10px;
       width: 950px;
       position: relative; }
-      /* line 101, ../../../../../../../var/lib/gems/1.8/gems/compass-0.8.17/frameworks/blueprint/stylesheets/blueprint/modules/_grid.sass */
+      /* line 101, ../../../../../../var/lib/gems/1.8/gems/compass-0.8.17/frameworks/blueprint/stylesheets/blueprint/modules/_grid.sass */
       * html #body .container .main_area {
         overflow-x: hidden; }
       /* line 98, ../../../app/stylesheets/terminal.sass */
-      #body .container .main_area .today_box, #body .container .main_area .about_box {
+      #body .container .main_area .today_box, #body .container .main_area .about_box, #body .container .main_area .album_box {
         margin-top: 30px;
         min-height: 600px;
         padding: 20px;
@@ -120,33 +120,39 @@
         background: transparent url("/images/dark.png");
         font-family: sans-serif; }
         /* line 106, ../../../app/stylesheets/terminal.sass */
-        #body .container .main_area .today_box .head, #body .container .main_area .about_box .head {
+        #body .container .main_area .today_box .left, #body .container .main_area .about_box .left, #body .container .main_area .album_box .left {
+          margin: 0px 0px; }
+        /* line 108, ../../../app/stylesheets/terminal.sass */
+        #body .container .main_area .today_box .head, #body .container .main_area .about_box .head, #body .container .main_area .album_box .head {
           font-size: 30px;
           width: 200px;
           margin: 0px auto;
           margin-bottom: 20px; }
-        /* line 112, ../../../app/stylesheets/terminal.sass */
-        #body .container .main_area .today_box .photo, #body .container .main_area .about_box .photo {
+        /* line 114, ../../../app/stylesheets/terminal.sass */
+        #body .container .main_area .today_box strong, #body .container .main_area .about_box strong, #body .container .main_area .album_box strong {
+          font-weight: bold; }
+        /* line 116, ../../../app/stylesheets/terminal.sass */
+        #body .container .main_area .today_box .photo, #body .container .main_area .about_box .photo, #body .container .main_area .album_box .photo {
           height: 150px;
           width: 250px;
           border: 1px solid #222;
           float: right;
           margin-left: 20px;
           margin-bottom: 20px; }
-      /* line 119, ../../../app/stylesheets/terminal.sass */
+      /* line 123, ../../../app/stylesheets/terminal.sass */
       #body .container .main_area .about_box {
         line-height: 20px; }
-      /* line 122, ../../../app/stylesheets/terminal.sass */
+      /* line 126, ../../../app/stylesheets/terminal.sass */
       #body .container .main_area .menu_box {
         display: inline;
         float: left;
         margin-right: 10px;
         width: 230px;
         height: 1000px; }
-        /* line 101, ../../../../../../../var/lib/gems/1.8/gems/compass-0.8.17/frameworks/blueprint/stylesheets/blueprint/modules/_grid.sass */
+        /* line 101, ../../../../../../var/lib/gems/1.8/gems/compass-0.8.17/frameworks/blueprint/stylesheets/blueprint/modules/_grid.sass */
         * html #body .container .main_area .menu_box {
           overflow-x: hidden; }
-        /* line 125, ../../../app/stylesheets/terminal.sass */
+        /* line 129, ../../../app/stylesheets/terminal.sass */
         #body .container .main_area .menu_box .games_box {
           margin: 5px;
           padding: 15px;
@@ -155,25 +161,25 @@
           font-weight: bold;
           line-height: 22px;
           background: transparent url('/images/dark.png'); }
-          /* line 133, ../../../app/stylesheets/terminal.sass */
+          /* line 137, ../../../app/stylesheets/terminal.sass */
           #body .container .main_area .menu_box .games_box .big {
             font-size: 18px;
             display: inline-block;
             *display: inline;
             *zoom: 1;
             color: red; }
-          /* line 137, ../../../app/stylesheets/terminal.sass */
+          /* line 141, ../../../app/stylesheets/terminal.sass */
           #body .container .main_area .menu_box .games_box .fifa_color {
             color: #D06628;
             display: inline-block;
             *display: inline;
             *zoom: 1; }
-          /* line 141, ../../../app/stylesheets/terminal.sass */
+          /* line 145, ../../../app/stylesheets/terminal.sass */
           #body .container .main_area .menu_box .games_box li {
             margin: 0px 3px;
             border-left: 2px solid #444;
             padding-left: 10px; }
-        /* line 146, ../../../app/stylesheets/terminal.sass */
+        /* line 150, ../../../app/stylesheets/terminal.sass */
         #body .container .main_area .menu_box .countdown_box {
           margin-left: -15px;
           padding: 20px 10px;
@@ -183,7 +189,7 @@
           border: 1px solid #D06628;
           overflow: hidden;
           background: #A11D08; }
-          /* line 155, ../../../app/stylesheets/terminal.sass */
+          /* line 159, ../../../app/stylesheets/terminal.sass */
           #body .container .main_area .menu_box .countdown_box .title {
             color: white;
             margin-left: 10px;
@@ -191,14 +197,14 @@
             position: relative;
             font-size: 30px;
             font-family: Space Age; }
-            /* line 162, ../../../app/stylesheets/terminal.sass */
+            /* line 166, ../../../app/stylesheets/terminal.sass */
             #body .container .main_area .menu_box .countdown_box .title .subtitle {
               padding: 20px;
               color: #D06628;
               width: 150px;
               font-size: 14px;
               margin: 0px auto; }
-          /* line 168, ../../../app/stylesheets/terminal.sass */
+          /* line 172, ../../../app/stylesheets/terminal.sass */
           #body .container .main_area .menu_box .countdown_box #countdown {
             font-size: 30px;
             line-height: 32px;
@@ -206,41 +212,41 @@
             margin: 0px auto;
             font-weight: bold;
             text-shadow: gray 4px; }
-        /* line 175, ../../../app/stylesheets/terminal.sass */
+        /* line 179, ../../../app/stylesheets/terminal.sass */
         #body .container .main_area .menu_box ul.menu {
           font-size: 25px;
           line-height: 20px;
           padding: 20px; }
-          /* line 179, ../../../app/stylesheets/terminal.sass */
+          /* line 183, ../../../app/stylesheets/terminal.sass */
           #body .container .main_area .menu_box ul.menu li {
             display: block;
             font-family: Champagne & Limousines;
             padding: 5px 20px; }
-          /* line 183, ../../../app/stylesheets/terminal.sass */
+          /* line 187, ../../../app/stylesheets/terminal.sass */
           #body .container .main_area .menu_box ul.menu li:hover {
             display: block;
             background: transparent url('/images/logo_back.png') repeat; }
-      /* line 188, ../../../app/stylesheets/terminal.sass */
+      /* line 192, ../../../app/stylesheets/terminal.sass */
       #body .container .main_area .content {
         display: inline;
         float: left;
         margin-right: 10px;
         width: 630px;
         margin-right: 0; }
-        /* line 101, ../../../../../../../var/lib/gems/1.8/gems/compass-0.8.17/frameworks/blueprint/stylesheets/blueprint/modules/_grid.sass */
+        /* line 101, ../../../../../../var/lib/gems/1.8/gems/compass-0.8.17/frameworks/blueprint/stylesheets/blueprint/modules/_grid.sass */
         * html #body .container .main_area .content {
           overflow-x: hidden; }
-        /* line 191, ../../../app/stylesheets/terminal.sass */
+        /* line 195, ../../../app/stylesheets/terminal.sass */
         #body .container .main_area .content .games_box, #body .container .main_area .content .login_view {
           padding: 10px;
           margin: 10px;
           border: 1px dotted #222;
           background: transparent url("/images/dark.png"); }
-          /* line 196, ../../../app/stylesheets/terminal.sass */
+          /* line 200, ../../../app/stylesheets/terminal.sass */
           #body .container .main_area .content .games_box .add_reservation, #body .container .main_area .content .login_view .add_reservation {
             color: gray;
             font-weight: bold; }
-          /* line 199, ../../../app/stylesheets/terminal.sass */
+          /* line 203, ../../../app/stylesheets/terminal.sass */
           #body .container .main_area .content .games_box .share, #body .container .main_area .content .login_view .share {
             padding: 10px;
             height: 32px; }
@@ -263,7 +269,7 @@
             #body .container .main_area .content .games_box .share .addthis_toolbox, #body .container .main_area .content .login_view .share .addthis_toolbox {
               display: block;
               float: right; }
-          /* line 203, ../../../app/stylesheets/terminal.sass */
+          /* line 207, ../../../app/stylesheets/terminal.sass */
           #body .container .main_area .content .games_box .title, #body .container .main_area .content .login_view .title {
             font-size: 35px;
             padding: 10px 0px;
@@ -271,29 +277,29 @@
             border-top: 1px solid gray;
             border-bottom: 1px solid gray;
             margin-bottom: 12px; }
-          /* line 210, ../../../app/stylesheets/terminal.sass */
+          /* line 214, ../../../app/stylesheets/terminal.sass */
           #body .container .main_area .content .games_box .games_box_title, #body .container .main_area .content .login_view .games_box_title {
             font-size: 35px;
             display: block;
             width: 250px;
             margin: 0px auto;
             padding-bottom: 20px; }
-          /* line 216, ../../../app/stylesheets/terminal.sass */
+          /* line 220, ../../../app/stylesheets/terminal.sass */
           #body .container .main_area .content .games_box .game_description, #body .container .main_area .content .login_view .game_description {
             display: inline-block;
             *display: inline;
             *zoom: 1;
             width: 380px; }
-          /* line 219, ../../../app/stylesheets/terminal.sass */
+          /* line 223, ../../../app/stylesheets/terminal.sass */
           #body .container .main_area .content .games_box .game, #body .container .main_area .content .login_view .game {
             padding: 5px; }
-          /* line 222, ../../../app/stylesheets/terminal.sass */
+          /* line 226, ../../../app/stylesheets/terminal.sass */
           #body .container .main_area .content .games_box .image_url, #body .container .main_area .content .login_view .image_url {
             display: inline-block;
             *display: inline;
             *zoom: 1;
             vertical-align: top; }
-          /* line 225, ../../../app/stylesheets/terminal.sass */
+          /* line 229, ../../../app/stylesheets/terminal.sass */
           #body .container .main_area .content .games_box .game_logo, #body .container .main_area .content .login_view .game_logo {
             display: inline-block;
             *display: inline;
@@ -303,51 +309,51 @@
             padding: 5px;
             background: transparent url('/images/dark.png');
             overflow: hidden; }
-            /* line 232, ../../../app/stylesheets/terminal.sass */
+            /* line 236, ../../../app/stylesheets/terminal.sass */
             #body .container .main_area .content .games_box .game_logo img, #body .container .main_area .content .login_view .game_logo img {
               display: block;
               margin: 0px auto; }
-          /* line 236, ../../../app/stylesheets/terminal.sass */
+          /* line 240, ../../../app/stylesheets/terminal.sass */
           #body .container .main_area .content .games_box .game_title, #body .container .main_area .content .login_view .game_title {
             padding-bottom: 10px;
             font-size: 24px;
             line-height: 26px; }
-          /* line 240, ../../../app/stylesheets/terminal.sass */
+          /* line 244, ../../../app/stylesheets/terminal.sass */
           #body .container .main_area .content .games_box .featured_game, #body .container .main_area .content .login_view .featured_game {
             background: #ff0000; }
-        /* line 243, ../../../app/stylesheets/terminal.sass */
+        /* line 247, ../../../app/stylesheets/terminal.sass */
         #body .container .main_area .content .login_view {
           margin-top: 50px;
           padding-left: 20px;
           height: 400px; }
-          /* line 247, ../../../app/stylesheets/terminal.sass */
+          /* line 251, ../../../app/stylesheets/terminal.sass */
           #body .container .main_area .content .login_view input[type=password], #body .container .main_area .content .login_view input[type=text] {
             padding: 5px;
             margin-left: 2px; }
-          /* line 250, ../../../app/stylesheets/terminal.sass */
+          /* line 254, ../../../app/stylesheets/terminal.sass */
           #body .container .main_area .content .login_view .login_title {
             font-size: 35px;
             padding: 15px 0px;
             width: 80px;
             margin: 0px auto; }
-        /* line 255, ../../../app/stylesheets/terminal.sass */
+        /* line 259, ../../../app/stylesheets/terminal.sass */
         #body .container .main_area .content .reservations_box {
           margin-top: 20px;
           height: 400px;
           padding: 15px;
           border: 1px dotted #222;
           background: transparent url('/images/dark.png'); }
-          /* line 256, ../../../app/stylesheets/terminal.sass */
+          /* line 260, ../../../app/stylesheets/terminal.sass */
           #body .container .main_area .content .reservations_box .head {
             font-weight: bold; }
-          /* line 258, ../../../app/stylesheets/terminal.sass */
+          /* line 262, ../../../app/stylesheets/terminal.sass */
           #body .container .main_area .content .reservations_box .name, #body .container .main_area .content .reservations_box .email, #body .container .main_area .content .reservations_box .phone, #body .container .main_area .content .reservations_box .when, #body .container .main_area .content .reservations_box .for_seats {
             padding: 5px 2px;
             width: 110px;
             display: inline-block;
             *display: inline;
             *zoom: 1; }
-          /* line 262, ../../../app/stylesheets/terminal.sass */
+          /* line 266, ../../../app/stylesheets/terminal.sass */
           #body .container .main_area .content .reservations_box .title {
             font-size: 30px;
             width: 300px;
@@ -359,14 +365,14 @@
             border-bottom: 1px solid gray;
             margin-bottom: 12px;
             text-align: center; }
-          /* line 275, ../../../app/stylesheets/terminal.sass */
+          /* line 279, ../../../app/stylesheets/terminal.sass */
           #body .container .main_area .content .reservations_box .reservation_show p {
             display: block; }
-            /* line 276, ../../../app/stylesheets/terminal.sass */
+            /* line 280, ../../../app/stylesheets/terminal.sass */
             #body .container .main_area .content .reservations_box .reservation_show p strong {
               font-weight: bold;
               display: block; }
-        /* line 285, ../../../app/stylesheets/terminal.sass */
+        /* line 289, ../../../app/stylesheets/terminal.sass */
         #body .container .main_area .content .gallery_box {
           margin-top: 20px;
           background-color: black;
@@ -376,109 +382,109 @@
           margin-right: 10px;
           width: 630px;
           margin-right: 0; }
-          /* line 286, ../../../app/stylesheets/terminal.sass */
+          /* line 290, ../../../app/stylesheets/terminal.sass */
           #body .container .main_area .content .gallery_box .photos_title {
             font-size: 34px;
             display: block;
             margin: 0px auto;
             margin-top: 10px;
             width: 200px; }
-          /* line 101, ../../../../../../../var/lib/gems/1.8/gems/compass-0.8.17/frameworks/blueprint/stylesheets/blueprint/modules/_grid.sass */
+          /* line 101, ../../../../../../var/lib/gems/1.8/gems/compass-0.8.17/frameworks/blueprint/stylesheets/blueprint/modules/_grid.sass */
           * html #body .container .main_area .content .gallery_box {
             overflow-x: hidden; }
-          /* line 297, ../../../app/stylesheets/terminal.sass */
+          /* line 301, ../../../app/stylesheets/terminal.sass */
           #body .container .main_area .content .gallery_box .gallery {
             display: block;
             padding: 20px; }
-            /* line 300, ../../../app/stylesheets/terminal.sass */
+            /* line 304, ../../../app/stylesheets/terminal.sass */
             #body .container .main_area .content .gallery_box .gallery a {
               display: inline-block;
               padding: 10px;
               margin: 5px;
               border: 1px solid gray;
               vertical-align: middle; }
-        /* line 306, ../../../app/stylesheets/terminal.sass */
+        /* line 310, ../../../app/stylesheets/terminal.sass */
         #body .container .main_area .content .google_map {
           display: block;
           padding-top: 50px;
           width: 425px;
           margin: 0px auto; }
-        /* line 311, ../../../app/stylesheets/terminal.sass */
+        /* line 315, ../../../app/stylesheets/terminal.sass */
         #body .container .main_area .content .address {
           font-family: Champagne & Limousines; }
-          /* line 313, ../../../app/stylesheets/terminal.sass */
+          /* line 317, ../../../app/stylesheets/terminal.sass */
           #body .container .main_area .content .address .head {
             padding: 10px 0px;
             font-size: 24px; }
-          /* line 316, ../../../app/stylesheets/terminal.sass */
+          /* line 320, ../../../app/stylesheets/terminal.sass */
           #body .container .main_area .content .address .line {
             padding: 5px 0px;
             font-size: 20px; }
-        /* line 319, ../../../app/stylesheets/terminal.sass */
+        /* line 323, ../../../app/stylesheets/terminal.sass */
         #body .container .main_area .content label {
           display: block; }
-        /* line 15, ../../../../../../../var/lib/gems/1.8/gems/compass-0.8.17/frameworks/blueprint/stylesheets/blueprint/modules/_form.sass */
+        /* line 15, ../../../../../../var/lib/gems/1.8/gems/compass-0.8.17/frameworks/blueprint/stylesheets/blueprint/modules/_form.sass */
         #body .container .main_area .content form label {
           font-weight: bold; }
-        /* line 17, ../../../../../../../var/lib/gems/1.8/gems/compass-0.8.17/frameworks/blueprint/stylesheets/blueprint/modules/_form.sass */
+        /* line 17, ../../../../../../var/lib/gems/1.8/gems/compass-0.8.17/frameworks/blueprint/stylesheets/blueprint/modules/_form.sass */
         #body .container .main_area .content form fieldset {
           padding: 1.4em;
           margin: 0 0 1.5em 0; }
-        /* line 20, ../../../../../../../var/lib/gems/1.8/gems/compass-0.8.17/frameworks/blueprint/stylesheets/blueprint/modules/_form.sass */
+        /* line 20, ../../../../../../var/lib/gems/1.8/gems/compass-0.8.17/frameworks/blueprint/stylesheets/blueprint/modules/_form.sass */
         #body .container .main_area .content form legend {
           font-weight: bold;
           font-size: 1.2em; }
-        /* line 24, ../../../../../../../var/lib/gems/1.8/gems/compass-0.8.17/frameworks/blueprint/stylesheets/blueprint/modules/_form.sass */
+        /* line 24, ../../../../../../var/lib/gems/1.8/gems/compass-0.8.17/frameworks/blueprint/stylesheets/blueprint/modules/_form.sass */
         #body .container .main_area .content form input.text, #body .container .main_area .content form input.title, #body .container .main_area .content form input[type=text] {
           margin: 0.5em 0;
           background-color: #fff;
           padding: 5px; }
-        /* line 28, ../../../../../../../var/lib/gems/1.8/gems/compass-0.8.17/frameworks/blueprint/stylesheets/blueprint/modules/_form.sass */
+        /* line 28, ../../../../../../var/lib/gems/1.8/gems/compass-0.8.17/frameworks/blueprint/stylesheets/blueprint/modules/_form.sass */
         #body .container .main_area .content form input.title {
           font-size: 1.5em; }
-        /* line 30, ../../../../../../../var/lib/gems/1.8/gems/compass-0.8.17/frameworks/blueprint/stylesheets/blueprint/modules/_form.sass */
+        /* line 30, ../../../../../../var/lib/gems/1.8/gems/compass-0.8.17/frameworks/blueprint/stylesheets/blueprint/modules/_form.sass */
         #body .container .main_area .content form input[type=checkbox], #body .container .main_area .content form input.checkbox,
         #body .container .main_area .content form input[type=radio], #body .container .main_area .content form input.radio {
           position: relative;
           top: 0.25em; }
-        /* line 34, ../../../../../../../var/lib/gems/1.8/gems/compass-0.8.17/frameworks/blueprint/stylesheets/blueprint/modules/_form.sass */
+        /* line 34, ../../../../../../var/lib/gems/1.8/gems/compass-0.8.17/frameworks/blueprint/stylesheets/blueprint/modules/_form.sass */
         #body .container .main_area .content form textarea {
           margin: 0.5em 0;
           padding: 5px; }
-        /* line 37, ../../../../../../../var/lib/gems/1.8/gems/compass-0.8.17/frameworks/blueprint/stylesheets/blueprint/modules/_form.sass */
+        /* line 37, ../../../../../../var/lib/gems/1.8/gems/compass-0.8.17/frameworks/blueprint/stylesheets/blueprint/modules/_form.sass */
         #body .container .main_area .content form select {
           margin: 0.5em 0; }
-        /* line 48, ../../../../../../../var/lib/gems/1.8/gems/compass-0.8.17/frameworks/blueprint/stylesheets/blueprint/modules/_form.sass */
+        /* line 48, ../../../../../../var/lib/gems/1.8/gems/compass-0.8.17/frameworks/blueprint/stylesheets/blueprint/modules/_form.sass */
         #body .container .main_area .content form fieldset {
           border: 1px solid #cccccc; }
-        /* line 50, ../../../../../../../var/lib/gems/1.8/gems/compass-0.8.17/frameworks/blueprint/stylesheets/blueprint/modules/_form.sass */
+        /* line 50, ../../../../../../var/lib/gems/1.8/gems/compass-0.8.17/frameworks/blueprint/stylesheets/blueprint/modules/_form.sass */
         #body .container .main_area .content form input.text, #body .container .main_area .content form input.title,
         #body .container .main_area .content form textarea,
         #body .container .main_area .content form select {
           border: 1px solid #bbbbbb; }
-          /* line 54, ../../../../../../../var/lib/gems/1.8/gems/compass-0.8.17/frameworks/blueprint/stylesheets/blueprint/modules/_form.sass */
+          /* line 54, ../../../../../../var/lib/gems/1.8/gems/compass-0.8.17/frameworks/blueprint/stylesheets/blueprint/modules/_form.sass */
           #body .container .main_area .content form input.text:focus, #body .container .main_area .content form input.title:focus,
           #body .container .main_area .content form textarea:focus,
           #body .container .main_area .content form select:focus {
             border: 1px solid #666666; }
-        /* line 41, ../../../../../../../var/lib/gems/1.8/gems/compass-0.8.17/frameworks/blueprint/stylesheets/blueprint/modules/_form.sass */
+        /* line 41, ../../../../../../var/lib/gems/1.8/gems/compass-0.8.17/frameworks/blueprint/stylesheets/blueprint/modules/_form.sass */
         #body .container .main_area .content form input.text, #body .container .main_area .content form input.title {
           width: 300px; }
-        /* line 43, ../../../../../../../var/lib/gems/1.8/gems/compass-0.8.17/frameworks/blueprint/stylesheets/blueprint/modules/_form.sass */
+        /* line 43, ../../../../../../var/lib/gems/1.8/gems/compass-0.8.17/frameworks/blueprint/stylesheets/blueprint/modules/_form.sass */
         #body .container .main_area .content form textarea {
           width: 390px;
           height: 250px; }
-        /* line 323, ../../../app/stylesheets/terminal.sass */
+        /* line 327, ../../../app/stylesheets/terminal.sass */
         #body .container .main_area .content .events {
           margin-top: 20px; }
-        /* line 325, ../../../app/stylesheets/terminal.sass */
+        /* line 329, ../../../app/stylesheets/terminal.sass */
         #body .container .main_area .content .event {
           background: transparent url("/images/dark.png");
           border: 1px solid gray;
           margin-bottom: 20px;
           padding: 20px;
           padding-top: 20px; }
-          /* line 331, ../../../app/stylesheets/terminal.sass */
+          /* line 335, ../../../app/stylesheets/terminal.sass */
           #body .container .main_area .content .event .title {
             display: block;
             padding: 5px;
@@ -486,13 +492,13 @@
             line-height: 26px;
             font-weight: 200;
             background-color: #75003b; }
-          /* line 340, ../../../app/stylesheets/terminal.sass */
+          /* line 344, ../../../app/stylesheets/terminal.sass */
           #body .container .main_area .content .event .description {
             margin-top: 10px;
             font-size: 16px;
             line-height: 20px;
             min-height: 100px; }
-          /* line 345, ../../../app/stylesheets/terminal.sass */
+          /* line 349, ../../../app/stylesheets/terminal.sass */
           #body .container .main_area .content .event .scheduled_for {
             display: block;
             position: relative;
@@ -516,17 +522,17 @@
             #body .container .main_area .content .event .scheduled_for .addthis_toolbox {
               display: block;
               float: right; }
-        /* line 352, ../../../app/stylesheets/terminal.sass */
+        /* line 356, ../../../app/stylesheets/terminal.sass */
         #body .container .main_area .content .food_menu {
           margin-top: 20px; }
-          /* line 354, ../../../app/stylesheets/terminal.sass */
+          /* line 358, ../../../app/stylesheets/terminal.sass */
           #body .container .main_area .content .food_menu .drinks_list {
             width: 250px;
             vertical-align: top;
             display: inline-block;
             *display: inline;
             *zoom: 1; }
-            /* line 357, ../../../app/stylesheets/terminal.sass */
+            /* line 361, ../../../app/stylesheets/terminal.sass */
             #body .container .main_area .content .food_menu .drinks_list ul.ingredients {
               padding: 0px;
               padding-left: 30px;
@@ -535,31 +541,31 @@
               font-family: sans-serif;
               font-size: 12px;
               line-height: 13px; }
-              /* line 365, ../../../app/stylesheets/terminal.sass */
+              /* line 369, ../../../app/stylesheets/terminal.sass */
               #body .container .main_area .content .food_menu .drinks_list ul.ingredients li {
                 padding: 1px;
                 margin: 1px; }
-          /* line 369, ../../../app/stylesheets/terminal.sass */
+          /* line 373, ../../../app/stylesheets/terminal.sass */
           #body .container .main_area .content .food_menu .head {
             font-size: 30px;
             line-height: 26px;
             text-align: center;
             font-family: Champagne & Limousines; }
-          /* line 374, ../../../app/stylesheets/terminal.sass */
+          /* line 378, ../../../app/stylesheets/terminal.sass */
           #body .container .main_area .content .food_menu .note {
             font-size: 12px;
             font-weight: bold;
             line-height: 16px;
             padding: 5px 0px;
             text-align: center; }
-          /* line 380, ../../../app/stylesheets/terminal.sass */
+          /* line 384, ../../../app/stylesheets/terminal.sass */
           #body .container .main_area .content .food_menu ul {
             background-color: #272727;
             margin: 20px 20px;
             padding: 10px;
             font-size: 20px;
             line-height: 18px; }
-            /* line 386, ../../../app/stylesheets/terminal.sass */
+            /* line 390, ../../../app/stylesheets/terminal.sass */
             #body .container .main_area .content .food_menu ul li {
               padding: 10px;
               margin: 0px 10px; }

@@ -1,0 +1,14 @@
+-title "Editing album"
+
+.album_box
+  .head
+    = yield :title
+  = error_messages_for :album
+
+  - form_for(:album, :url => object_url, :html => { :method => :put }) do |f|
+    = render :partial => "form", :locals => {:f => f}
+    %p= submit_tag "Update"
+  .edit
+    = link_to 'Show', object_path
+    |
+    = link_to 'Back', objects_path
