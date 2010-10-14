@@ -19,7 +19,7 @@
           %strong Featured Game
           = h game.featured
       .date
-        = h game.scheduled_for.strftime("%d %B, %Y")
+        = h game.scheduled_for.strftime("%d %B, %Y @ %H:%M")
     -if game_counter % 2 != 0
       .image_url
         - unless game.image_url.nil? or game.image_url.blank?

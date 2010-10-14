@@ -1,9 +1,14 @@
 window.addEvent('domready',function(){
       var face = (function(){
          var time = Date.parse('11/June/2010')
-         $('countdown').set('text', "in "+distance_of_time_in_words(new Date(), time))
-//         $('countdown').set('text', (new Date()).strftime("%d:%B:%Y %H:%M:%S"))
-         face.delay(1000)
+         var now = new Date()
+          if ( time > now ){
+           $('countdown').set('text', "in "+distance_of_time_in_words(new Date(), time))
+  //         $('countdown').set('text', (new Date()).strftime("%d:%B:%Y %H:%M:%S"))
+           face.delay(1000)
+          } else {
+            $('countdown').set('text', 'has started!')
+          }
        });
       face.delay(1000)
       

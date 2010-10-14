@@ -1,4 +1,11 @@
-.gallery_box#gallery_box
+
+.gallery_box
+  - if current_user
+    .edit
+      = link_to "Edit Albums", albums_url
+      |
+      = link_to "Logout", logout_url
+  #gallery_box
 
 = stylesheet_link_tag "slimbox"
 = javascript_include_tag "slimbox-1.71/js/slimbox","pictures"

@@ -1,5 +1,8 @@
 !!!
 %head
+  %meta{:name=>"description", :content=>"The Terminal 1474 Bar Lounge"}
+  %meta{:name=>"keywords", :content=>"toronto,ontario,portugese,bar,lounge,tapas,afterhours,party,drinks,wine,beer,martinis,russian,st.clair,russian,sports"}
+  %meta{:name=>"author", :content => "Pavel Zaitsev"}
   = stylesheet_link_tag 'compiled/terminal.css', :media => 'screen, projection'
   = stylesheet_link_tag 'compiled/screen.css', :media => 'screen, projection'
   = stylesheet_link_tag 'compiled/print.css', :media => 'print'
@@ -17,25 +20,25 @@
   %title
     = yield :title
 %body#body
-  -link_to root_url do
+  -link_to root_path do
     .title_logo
       =image_tag "/images/terminal_logo.png"
 
   .container
     .contact_bar
-      -link_to today_url do
+      -link_to today_path do
         .item.last
           .text
             TODAY
-      -link_to games_url do
-        .item
-          .text
-            SOCCER
-      -link_to events_url do
+      -link_to events_path do
         .item
           .text
             EVENTS
-      -link_to about_url do
+      -link_to photos_path do
+        .item
+          .text
+            PICTURES
+      -link_to about_path do
         .item
           .text
             ABOUT US
@@ -64,22 +67,24 @@
             %li><
               Reservations
 
-        - link_to '/games' do
-          .countdown_box><
-            = image_tag "/images/fifa_box.png"
-            #countdown
-        - link_to '/games' do
-          .games_box
-            %ul
-              %li
-                .big
-                  LIVE
-                Televised Games
-              %li
-                .big
-                  Full 
-                .fifa_color
-                  FIFA 2010
-                Coverage
+        /
+          - link_to '/games' do
+            .countdown_box><
+              = image_tag "/images/fifa_box.png"
+              #countdown
+
+          - link_to '/games' do
+            .games_box
+              %ul
+                %li
+                  .big
+                    LIVE
+                  Televised Games
+                %li
+                  .big
+                    Full 
+                  .fifa_color
+                    FIFA 2010
+                  Coverage
       .content
         =yield

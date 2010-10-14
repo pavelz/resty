@@ -18,7 +18,7 @@
       .description
         = h current_object.description
       .date
-        = h game.scheduled_for.strftime("%d %B, %Y")
+        = h game.scheduled_for.strftime("%d %B, %Y @ %H:%M")
     .add_reservation
       = link_to "Make a reservation", new_reservation_path('reservation[when]' => game.scheduled_for )
     .share

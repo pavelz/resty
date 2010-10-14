@@ -3,9 +3,10 @@
   .head.left
     = h current_object.name
   %div[current_object]
-    %p.event_id
-      %strong For the Event
-      = h current_object.event.title
+    -if current_object.event_id
+      %p.event_id
+        %strong For the Event
+        = h current_object.event.title
   - if current_user
     .edit
       = link_to 'Edit', edit_object_path

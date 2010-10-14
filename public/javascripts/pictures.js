@@ -33,15 +33,20 @@ var load_albums = function(){
                     albums.each(function(album){
                       a = album.album
                       album_title = new Element('div',{'class':'fancy photos_title','text':a.name});
-                      album_title.inject(gallery_box);
+                      link_box = new Element('a',{href:'http://www.flickr.com/search/show/?q='+a.flickr_tag+'&m=tags&w=49714190%40N05'})
+                      album_title.inject(link_box);
+                      link_box.inject(gallery_box);
                       album_box = new Element('div',
                                               {
+                                                'id':a.flickr_tag,
                                                 'class':'gallery'
                                                 }
                                             );
                       album_box.inject(gallery_box);
                       load_pictures("49714190@N05", a.flickr_tag, a.flickr_tag);
-                    })
+                    });
+                    Cufon.replace('.fancy',{'fontFamily':'Champagne & Limousines'} );
+                    Cufon.now();
                   }
     }).get();
 
